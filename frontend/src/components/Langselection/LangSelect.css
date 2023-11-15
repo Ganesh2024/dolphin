@@ -1,0 +1,63 @@
+.langPageWrapper {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  background: #E8F1F2;
+}
+.langPageWrapper .langP-header {
+  color: #13293d;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.langPageWrapper .langP-header h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.langPageWrapper .selectLangWrapper {
+  background: #13293D;
+  color: #fff;
+  width: 25rem;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: rgba(117, 117, 218, 0.2) 0px 7px 29px 0px;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.langPageWrapper .select {
+  width: 100%;
+}
+.langPageWrapper .select select {
+  width: 100%;
+  font-size: bold;
+  padding: 0.7rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.langPageWrapper .btn-continue {
+  font-weight: bold;
+  background: #E15554;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.langPageWrapper .btn-continue svg {
+  font-size: 1.1rem;
+  transition: all 0.2s linear;
+}
+.langPageWrapper .btn-continue:hover svg {
+  transform: translateX(5px);
+}/*# sourceMappingURL=LangSelect.css.map */

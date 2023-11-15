@@ -1,0 +1,85 @@
+$color-bg: #13293d;
+$color-btn: #E15554;
+
+.login-wrp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  background: #E8F1F2;
+  height: 100vh;
+  gap: 3rem;
+
+  .header {
+    color: $color-bg;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
+
+  .login-box {
+    background: #13293d;
+    color: #fff;
+    max-width: 30rem;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 1.7rem;
+    }
+
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.7rem;
+
+      input {
+        width: 100%;
+        padding: 0.7rem;
+        border-radius: 20px;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .submit {
+      margin-top: 2rem;
+      font-size: 16px;
+      background: $color-btn;
+      padding: 0.5rem 1.5rem;
+      border-radius: 20px;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .register-wrp {
+    .register-box {
+      padding: 1rem 1.5rem;
+    }
+  }
+}

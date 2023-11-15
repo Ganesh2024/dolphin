@@ -1,0 +1,104 @@
+$color-bg: #13293d;
+$color-btn: #E15554;
+
+.exercisesPage-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap:3rem;
+  padding: 2rem 3rem;
+  border: 3px dotted red;
+
+  .exercises-header{
+    color: $color-bg;
+    font-weight: 500;
+    display: flex;
+    gap: 0.5rem;
+    gap: 1rem;
+    position: relative;
+    align-items: center;
+    .rst-logout-wrp{
+      position:absolute;
+      right: 0;
+      display: flex;
+      gap: 1.3rem;
+      .reset{
+        border: 2px solid $color-bg;
+        border-radius: 20px;
+        padding: 0.3rem 1.5rem;
+        cursor: pointer;
+        transition: all 0.1s linear;
+        &:hover{
+          background: #333;
+          color: #fff;
+        }
+      }
+      .logout{
+        cursor: pointer;
+        svg{
+          font-size: 2rem;
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .user-img{
+      svg{
+        font-size: 5rem;
+      }
+    }
+    .h1{
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+  }
+
+  .exercises-wrapper{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 88vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 3px solid #13293d;
+    gap: 2rem;
+    padding:2rem;
+    .exercises{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width:100%;
+      .exercise{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0.7rem;
+        padding-left: 1rem;
+        border: 3px solid #13293d;
+        border-radius: 50px;
+        color:#13293d;
+        cursor: pointer;
+        &:hover{
+          background: $color-btn;
+          color: #fff;
+        }
+        &:hover .progress{
+          border: 2px solid #fff;
+        }
+        .progress{
+          border: 2px solid $color-bg;
+          padding: 0.2rem 1rem;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .exercise-select{
+    color: #E8F1F2;
+    background:#E15554;
+    border-radius: 20px;
+    padding:0.5rem 1.5rem;
+    // margin-top: 2rem;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+}
