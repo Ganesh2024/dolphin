@@ -45,7 +45,6 @@ const LangSelection = () => {
         <div className="select">
           <select onChange={(e)=>setLang(e.target.value)}>
             <option value="Eng">English</option>
-            <option value="Tel">Telugu</option>
             <option value="Hindi">Hindi</option>
           </select> 
         </div>

@@ -74,7 +74,6 @@ app.post("/reset",async (req,res)=>{
     user.lang=[{
       langname: null,
       score:  0 ,
-      // exercise:null,
       level:1,
       correctQues: [],
       wrongQues: []

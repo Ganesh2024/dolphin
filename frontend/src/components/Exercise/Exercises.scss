@@ -7,7 +7,6 @@ $color-btn: #E15554;
   height: 100vh;
   gap:3rem;
   padding: 2rem 3rem;
-  border: 3px dotted red;
 
   .exercises-header{
     color: $color-bg;
@@ -61,6 +60,23 @@ $color-btn: #E15554;
     border: 3px solid #13293d;
     gap: 2rem;
     padding:2rem;
+    .change_lang{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      .lang-wrp{
+        display: flex;
+        gap: 0.7rem;
+        .lang{
+          cursor: pointer;
+          padding: 0.3rem 1.5rem;
+          border: 2px solid $color-bg;
+          column-width: #333;
+          border-radius: 20px;
+        }
+
+      }
+    }
     .exercises{
       display: flex;
       flex-direction: column;

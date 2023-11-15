@@ -4,7 +4,6 @@
   height: 100vh;
   gap: 3rem;
   padding: 2rem 3rem;
-  border: 3px dotted red;
 }
 .exercisesPage-wrapper .exercises-header {
   color: #13293d;
@@ -55,6 +54,23 @@
   border: 3px solid #13293d;
   gap: 2rem;
   padding: 2rem;
+}
+.exercisesPage-wrapper .exercises-wrapper .change_lang {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.exercisesPage-wrapper .exercises-wrapper .change_lang .lang-wrp {
+  display: flex;
+  gap: 0.7rem;
+}
+.exercisesPage-wrapper .exercises-wrapper .change_lang .lang-wrp .lang {
+  cursor: pointer;
+  padding: 0.3rem 1.5rem;
+  border: 2px solid #13293d;
+  -moz-column-width: #333;
+       column-width: #333;
+  border-radius: 20px;
 }
 .exercisesPage-wrapper .exercises-wrapper .exercises {
   display: flex;

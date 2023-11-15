@@ -29,6 +29,7 @@ const Exercises = () => {
   }
 
   const getUser = async () => {
+    console.log('getuser');
     const { data } = await axios.post(url + "/user", { userId: userData._id }, headers);
     const corr_ques_arr = data.user.lang[0].correctQues;
     const wrong_ques_arr = data.user.lang[0].wrongQues;
@@ -60,19 +61,24 @@ const Exercises = () => {
     if (exercise.innerText == "Exercise 2") localStorage.setItem("exercise", JSON.stringify("Fillup"));
     navigate('/question')
   }
-
+  
   const handleReset = async () => {
-    const data = axios.post(url+'/reset',{userId:userData._id},headers);
+    const data = await axios.post(url+'/reset',{userId:userData._id},headers);
     localStorage.removeItem("mcq-index")
     localStorage.removeItem("Fillup-index")
     console.log(data);
-    // location.reload();
+    navigate('/langSelect')
   }
   const handleLogout = async () => {
     localStorage.removeItem("exercise")
     localStorage.removeItem("userData");
     navigate('/login')
   }
+
+  // const langs = document.querySelectorAll('.lang');
+  // langs.forEach(item=>{
+  //   console.log(item.value);
+  // })
 
   return (
     <div className='exercisesPage-wrapper'>
@@ -90,6 +96,13 @@ const Exercises = () => {
         </div>
       </div>
       <div className='exercises-wrapper'>
+        <div className="change_lang">
+          <h2>Languages</h2>
+          <div className="lang-wrp">
+            <div className="lang" value="Eng">English</div>
+            <div className="lang" value="Hindi">Hindi</div>
+          </div>
+        </div>
         <h1>Choose Exercise</h1>
         <div className='exercises'>
           <div onClick={handleExercise} className='exercise'>

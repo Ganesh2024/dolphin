@@ -45,8 +45,9 @@ export const Question = () => {
         }
       })
 
+      console.log('correct req');
       const res = await axios.post(url + '/quesId', { quesId: questions[index]._id, type: questions[index].exercise, lang, level: questions[index].level, userId: userData._id });
-
+      
       setDisableNext(false);
       alert("Correct answer!");
     }
@@ -59,8 +60,10 @@ export const Question = () => {
         }
       })
       setDisableSubmit(true)
+      console.log('Incorrect req');
       const res = await axios.post(url + '/quesId', { quesId: questions[index]._id, type: questions[index].exercise, lang, level: 0, userId: userData._id });
       alert("your are wrong, answer is " + questions[index].corrAns);
+      console.log(res);
       setDisableNext(false);
     }
 
