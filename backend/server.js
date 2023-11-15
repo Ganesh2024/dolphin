@@ -101,7 +101,7 @@ app.post('/user',async (req,res)=>{
 })
 
 app.post('/putQues',async(req,res)=>{
-  data.forEach( async (item)=>{await Questions.push(item)})
+  req.body.forEach( async (item)=>{await Questions.create(item)})
   res.send("success");
 })
 
