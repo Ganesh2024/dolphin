@@ -4,7 +4,7 @@ const express = require("express");
 const connect = require("./config/db");
 const bodyParser = require("body-parser");
 const questionsData = require("./temp/data")
-
+const data = require('./temp/data.json')
 const {login,register} = require("./controllers/Controller");
 const { User } = require("./model/UserSchema");
 const { Questions } = require("./model/QuesSchema");
@@ -99,7 +99,12 @@ app.post('/user',async (req,res)=>{
       res.send({msg:"internal server error",status:500});
   }
 })
-      
+
+app.post('/putQues',async(req,res)=>{
+  data.forEach( async (item)=>{await Questions.push(item)})
+  res.send("success");
+})
+
 app.get("/", (req, res) => {
   res.send({ status: 400, msg: "success" });
 });
