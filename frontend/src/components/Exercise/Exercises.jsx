@@ -14,7 +14,7 @@ const Exercises = () => {
   const [loading, setLoading] = useState(false);
   const [mcq_progress, setMcqProgress] = useState(0)
   const [Fillup_progress, setFillupProgress] = useState(0)
-  const url = 'https://dolphinapi.onrender.com/';
+  const url = 'https://dolphinapi.onrender.com';
   
   const headers = {
     'Access-Control-Allow-Origin': '*',
