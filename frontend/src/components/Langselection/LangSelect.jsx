@@ -9,7 +9,7 @@ const LangSelection = () => {
   const navigate = useNavigate(); 
   const [loading, setLoading] = useState(false);
   const [lang,setLang] = useState('Eng');
-  const url = 'http://localhost:8000';
+  const url = 'https://dolphinapi.onrender.com/';
 
   const HandleLangChange = async (e) => {
     try {

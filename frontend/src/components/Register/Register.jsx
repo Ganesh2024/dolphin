@@ -4,7 +4,7 @@ import './Register.css'
 import axios from 'axios';
 
 export const Register = () => {
-    const url = 'http://localhost:8000'
+    const url = 'https://dolphinapi.onrender.com/'
     const [loading,setLoading] = useState(false)
     const navigate = useNavigate();
 

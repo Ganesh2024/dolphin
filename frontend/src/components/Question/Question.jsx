@@ -9,7 +9,7 @@ export const Question = () => {
   const [disableSubmit, setDisableSubmit] = useState(false);
   const [disableNext, setDisableNext] = useState(true);
 
-  const url = 'http://localhost:8000';
+  const url = 'https://dolphinapi.onrender.com/';
 
   var exercise = localStorage.getItem("exercise") ? JSON.parse(localStorage.getItem("exercise")) : null;
   var lang = localStorage.getItem("selectedLang") ? JSON.parse(localStorage.getItem("selectedLang")) : null;
