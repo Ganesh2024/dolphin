@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Register } from "./Components/Register/Register";
+import { Register } from "./components/Register/Register";
 import { PageNotFound } from "./Components/PageNotFound/PageNotFound";
 import LangSelect from './components/Langselection/LangSelect'
 import Exercises from './components/Exercise/Exercises'
